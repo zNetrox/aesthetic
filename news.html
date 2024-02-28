@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+	<link rel="icon" type="image/svg" href="icons/aesthetic_logo.svg" />
+    <title>Aesthetic | News</title>
+</head>
+<body>
+	<!-- loader -->
+	<div id="loader-page">
+		<div>
+			<div class="border"></div>
+			<div class="overflow">
+				<p>0%</p>
+			</div>
+			<div class="border"></div>
+		</div>
+	</div>
+    <!-- header -->
+	<header>
+		<div>
+			<a class="link-home" href="index.html">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/" version="1.1" width="100%" height="100%" viewBox="0 0 2084 2084" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+					<circle cx="1694.98" cy="1666.67" r="104.167"/>
+					<circle cx="1041.67" cy="1041.67" r="729.167"/>
+					<path d="M687.5,1495.59l0,-553.67c-0,-93.931 37.314,-184.015 103.733,-250.434c66.419,-66.419 156.503,-103.733 250.434,-103.733l0.008,-0c93.929,-0 184.01,37.313 250.428,103.73c66.417,66.418 103.73,156.5 103.73,250.428l0,553.679l-179.451,0l-0,-304.96l-348.39,0l0,304.96l-180.492,0Zm179.167,-480.754l350,0l-0,-79.166c-0,-94.349 -76.485,-170.834 -170.834,-170.834l-8.333,0c-94.349,0 -170.833,76.485 -170.833,170.834l-0,79.166Z" />
+				</svg>
+			</a>
+		</div>
+		<div>
+			<p id="open-hamburger-menu" class="open">menu</p>
+			<p id="close-hamburger-menu" class="close">close</p>
+		</div>
+	</header>
+	<!-- navigation -->
+	<nav>
+		<div class="nav-bg-part-1"></div> <!-- pour l'animation du background -->
+		<div class="nav-bg-part-2"></div>
+		<div class="nav-menu">
+			<div class="nav-container-links">
+				<a href="index.html" class="click">
+					<div>
+						<span>01</span>
+						<h2>Home</h2>
+						<svg width="100%" height="100%" viewBox="0 0 2084 2084" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><path d="M1204.1,1440.15l398.488,-398.488l-398.01,-398.488l-103.598,103.12l222.452,222.451l-842.693,0l0,145.833l842.693,0l-222.452,222.452l103.12,103.12Z"/></svg>
+					</div>
+				</a>
+				<a href="selection.html" class="click">
+					<div>
+						<span>02</span>
+						<h2>Selection</h2>
+						<svg width="100%" height="100%" viewBox="0 0 2084 2084" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><path d="M1204.1,1440.15l398.488,-398.488l-398.01,-398.488l-103.598,103.12l222.452,222.451l-842.693,0l0,145.833l842.693,0l-222.452,222.452l103.12,103.12Z"/></svg>
+					</div>
+				</a>
+				<a href="news.html" class="click">
+					<div>
+						<span>03</span>
+						<h2>News</h2>
+						<svg width="100%" height="100%" viewBox="0 0 2084 2084" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><path d="M1204.1,1440.15l398.488,-398.488l-398.01,-398.488l-103.598,103.12l222.452,222.451l-842.693,0l0,145.833l842.693,0l-222.452,222.452l103.12,103.12Z"/></svg>
+					</div>
+				</a>
+				<a href="contact.html" class="click">
+					<div>
+						<span>04</span>
+						<h2>Contact</h2>
+						<svg width="100%" height="100%" viewBox="0 0 2084 2084" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><path d="M1204.1,1440.15l398.488,-398.488l-398.01,-398.488l-103.598,103.12l222.452,222.451l-842.693,0l0,145.833l842.693,0l-222.452,222.452l103.12,103.12Z"/></svg>
+					</div>
+				</a>
+			</div>
+		</div>
+	</nav>
+	<!-- audio -->
+	<button id="custom-player" class="click">
+		<div>
+			<p>pause</p>
+		</div>
+		<div>
+			<div class="sound-volume"></div>
+			<div class="sound-volume"></div>
+			<div class="sound-volume"></div>
+		</div>
+	</button>
+	<audio controls>
+		 <source> <!-- la source est créer grace a data-song et au JS -->
+	</audio>
+	<!-- section 1 -->
+    <section class="news-sec-1">
+		<!-- bandrole -->
+		<div class="text-ribbon">
+			<p>Aesthetic</p>
+			<p>News</p>
+			<p>Aesthetic</p>
+			<p>News</p>
+		</div>
+		<!-- partie 1 -->
+        <div class="part-1">
+            <article>
+				<div>
+					<p>newest releases</p>
+					<h2>24</h2>
+					<p>by Khalil?</p>
+					<p>Khalil? just drop her new EP 24 with 5 songs realised the last 09/15</p>
+					<a href="https://open.spotify.com/intl-fr/album/0Zgp440VrKAabVYHYICdB7" target="_blank">view on spotify</a>
+				</div>
+            </article>
+            <aside>
+                <div>
+                    <button class="player-cover-img play" data-song="audio/sugar-and-spice.mp3">
+						<img src="img/ep-khalil.jpg" alt="cover ep khalil?">
+						<svg class="player-start" width="50%" height="100%" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(-1.60476e-16,0.873589,-0.82516,-1.51579e-16,464.019,30.7562)"><path d="M250.969,107.881L394.057,410.853L107.881,410.853L250.969,107.881Z"/></g></svg>
+						<svg class="player-pause" width="50%" height="100%" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,37.5,0)"><g transform="matrix(1.48276,0,0,0.833333,-23.2759,41.6667)"><rect x="100" y="100" width="33.721" height="300"/></g><g transform="matrix(1.48276,0,0,0.833333,101.724,41.6667)"><rect x="100" y="100" width="33.721" height="300"/></g></g></svg>
+					</button>
+                    <p>Sugar And Spice - Khalil?</p>
+                </div>
+            </aside>
+        </div>
+		<!-- partie 2 -->
+		<div class="part-2">
+			<ul>
+				<li>
+					<!-- partie visible -->
+					<div class="li-visible-part open">
+						<div>
+							<h3>on your skin</h3>
+							<p>by Ze66y, gllomy, dhan</p>
+						</div>
+						<div>
+							<button>lisen</button>
+						</div>
+					</div>
+					<!-- partie invisible -->
+					<div class="li-unvisible-part">
+						<div>
+							<p>by Ze66y, gllomy, dhan</p>
+							<a class="click" href="https://open.spotify.com/intl-fr/album/4KkYHp41aEEitrF7rIvb2J" target="_blank">view on spotify</a>
+						</div>
+						<div>
+							<button class="player-cover-img play" data-song="audio/on-your-skin-ft-dhan.mp3">
+								<img src="img/cover-ze66y-on-your-skin.jpg" alt="cover Ze66y on your skin">
+								<svg class="player-start" width="50%" height="100%" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(-1.60476e-16,0.873589,-0.82516,-1.51579e-16,464.019,30.7562)"><path d="M250.969,107.881L394.057,410.853L107.881,410.853L250.969,107.881Z"/></g></svg>
+								<svg class="player-pause" width="50%" height="100%" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,37.5,0)"><g transform="matrix(1.48276,0,0,0.833333,-23.2759,41.6667)"><rect x="100" y="100" width="33.721" height="300"/></g><g transform="matrix(1.48276,0,0,0.833333,101.724,41.6667)"><rect x="100" y="100" width="33.721" height="300"/></g></g></svg>
+							</button>
+						</div>
+					</div>
+				</li>
+				<li>
+					<!-- partie visible -->
+					<div class="li-visible-part open">
+						<div>
+							<h3>pay2play</h3>
+							<p>by soap.</p>
+						</div>
+						<div>
+							<button>lisen</button>
+						</div>
+					</div>
+					<!-- partie invisible -->
+					<div class="li-unvisible-part">
+						<div>
+							<p>by soap.</p>
+							<a class="click" href="https://open.spotify.com/intl-fr/album/1BWpDAEZQ8elH9VaNz420p" target="_blank">view on spotify</a>
+						</div>
+						<div>
+							<button class="player-cover-img play" data-song="audio/pay2play.mp3">
+								<img src="img/cover-soap-pay2play.jpg" alt="cover soap pay2play">
+								<svg class="player-start" width="50%" height="100%" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(-1.60476e-16,0.873589,-0.82516,-1.51579e-16,464.019,30.7562)"><path d="M250.969,107.881L394.057,410.853L107.881,410.853L250.969,107.881Z"/></g></svg>
+								<svg class="player-pause" width="50%" height="100%" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,37.5,0)"><g transform="matrix(1.48276,0,0,0.833333,-23.2759,41.6667)"><rect x="100" y="100" width="33.721" height="300"/></g><g transform="matrix(1.48276,0,0,0.833333,101.724,41.6667)"><rect x="100" y="100" width="33.721" height="300"/></g></g></svg>
+							</button>
+						</div>
+					</div>
+				</li>
+				<li>
+					<!-- partie visible -->
+					<div class="li-visible-part open">
+						<div>
+							<h3>would u still want me</h3>
+							<p>by damienfarron</p>
+						</div>
+						<div>
+							<button>lisen</button>
+						</div>
+					</div>
+					<!-- partie invisible -->
+					<div class="li-unvisible-part">
+						<div>
+							<p>by damienfarron</p>
+							<a class="click" href="https://open.spotify.com/intl-fr/album/2Tkox8oIpIm215ADiZgif5" target="_blank">view on spotify</a>
+						</div>
+						<div>
+							<button class="player-cover-img play" data-song="audio/would-u-still-want-me.mp3">
+								<img src="img/cover-damienfarron-would-u-still-want-me.jpg" alt="cover would u still want me damienfarron">
+								<svg class="player-start" width="50%" height="100%" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(-1.60476e-16,0.873589,-0.82516,-1.51579e-16,464.019,30.7562)"><path d="M250.969,107.881L394.057,410.853L107.881,410.853L250.969,107.881Z"/></g></svg>
+								<svg class="player-pause" width="50%" height="100%" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,37.5,0)"><g transform="matrix(1.48276,0,0,0.833333,-23.2759,41.6667)"><rect x="100" y="100" width="33.721" height="300"/></g><g transform="matrix(1.48276,0,0,0.833333,101.724,41.6667)"><rect x="100" y="100" width="33.721" height="300"/></g></g></svg>
+							</button>
+						</div>
+					</div>
+				</li>
+				<li>
+					<!-- partie visible -->
+					<div class="li-visible-part open">
+						<div>
+							<h3>rain drops</h3>
+							<p>by 8percent, Shady Moon, ciscaux</p>
+						</div>
+						<div>
+							<button>lisen</button>
+						</div>
+					</div>
+					<!-- partie invisible -->
+					<div class="li-unvisible-part">
+						<div>
+							<p>by 8percent, Shady Moon, ciscaux</p>
+							<a class="click" href="https://open.spotify.com/intl-fr/track/4SlcIO93O93Inn2dUEUEDx" target="_blank">view on spotify</a>
+						</div>
+						<div>
+							<button class="player-cover-img play" data-song="audio/rain-drops.mp3">
+								<img src="img/cover-8percent-raindrops.jpg" alt="cover 8percent rain drops">
+								<svg class="player-start" width="50%" height="100%" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(-1.60476e-16,0.873589,-0.82516,-1.51579e-16,464.019,30.7562)"><path d="M250.969,107.881L394.057,410.853L107.881,410.853L250.969,107.881Z"/></g></svg>
+								<svg class="player-pause" width="50%" height="100%" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,37.5,0)"><g transform="matrix(1.48276,0,0,0.833333,-23.2759,41.6667)"><rect x="100" y="100" width="33.721" height="300"/></g><g transform="matrix(1.48276,0,0,0.833333,101.724,41.6667)"><rect x="100" y="100" width="33.721" height="300"/></g></g></svg>
+							</button>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+    </section>
+	<!-- section 2 -->
+	<section class="news-sec-2">
+		<!-- bandrole -->
+		<div class="text-ribbon">
+			<p>Sub</p>
+			<p>Newsletter</p>
+			<p>Sub</p>
+			<p>Newsletter</p>
+		</div>
+		<form>
+			<p>Sub To Our Newsletter</p>
+			<input type="email" placeholder="Your Email" required>
+			<button class="click" id="news-letter-submit" type="submit">submit</button>
+		</form>
+	</section>
+    <!-- footer -->
+	<footer>
+		<div class="footer-bg"></div><!-- bord arrondi pour une potentielle animation -->
+		<div class="footer-container">
+			<div class="part-1">
+				<div class="left reveal">
+					<p class="anim_slide-up">about us</p>
+					<p class="anim_slide-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, commodi inventore adipisci ea ipsam veniam ad iusto officiis est labore eligendi repellendus?</p>
+				</div>
+				<div class="right reveal">
+					<div>
+						<a href="index.html" class="click anim_slide-up-rotate">Home</a>
+						<a href="selection.html" class="click anim_slide-up-rotate delay-02ms">Selection</a>
+						<a href="news.html" class="click anim_slide-up-rotate delay-04ms">News</a>
+						<a href="contact.html" class="click anim_slide-up-rotate delay-06ms">Contact</a>
+					</div>
+				</div>
+			</div>
+			<div class="part-2">
+				<a class="link-home" href="index.html">Aesthetic</a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
+<script>
+
+const customPlayer = document.querySelector('#custom-player')
+
+const audio = document.querySelector('audio')
+const audioSrc = document.querySelector('audio > source')
+
+document.querySelectorAll('.player-cover-img').forEach((player) => {
+	player.addEventListener("click", () => {
+	customPlayer.classList.add('active')
+    player.classList.toggle('playing')
+    // met en pause les musique non cliquer
+    document.querySelectorAll('.player-cover-img').forEach((otherPlayer) => {
+      if(otherPlayer !== player) {
+        otherPlayer.classList.remove('playing')
+      }
+    })
+  })
+})
+
+document.querySelectorAll('.player-cover-img').forEach((player) => {
+  player.addEventListener("click", () => {
+	player.classList.toggle('play')
+	player.classList.toggle('pause')
+    if(audioSrc.getAttribute("src") !== player.getAttribute("data-song")) {
+      // change l'audio
+      audioSrc.src = player.getAttribute("data-song")
+      audio.load()
+      audio.play()
+    } else {
+      // si vous cliquez à nouveau sur la meme audio
+      if (audio.paused) {
+        // si l'audio est en pause commence la lecture
+        audio.play()
+      } else {
+        audio.pause()
+		customPlayer.classList.remove('active')
+      }
+    }
+  })
+})
+
+// ---------------------------------
+
+document.querySelectorAll('.news-sec-1 .part-2 .li-visible-part').forEach((liVisible) => {
+	// permet d'avoir qu'un seul li d'ouvert
+	const closestLi = liVisible.closest('li')
+	liVisible.addEventListener('click', () => {
+		liVisible.classList.toggle('close')
+		liVisible.classList.toggle('open')
+		document.querySelectorAll('.news-sec-1 .part-2 li').forEach((li) => {
+			if(li !== closestLi) {
+				li.classList.remove('active')
+			}
+		})
+		closestLi.classList.toggle('active')
+	})
+})
+
+// ----------------------------------
+
+customPlayer.addEventListener('click', () => {
+	audio.pause()
+	customPlayer.classList.remove('active')
+	document.querySelectorAll('.player-cover-img').forEach((player) => {
+		player.classList.remove('playing');
+		player.classList.remove('pause');
+		player.classList.add('play');
+	})
+})
+
+</script>
